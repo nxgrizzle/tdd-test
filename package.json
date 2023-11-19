@@ -36,8 +36,8 @@
     "enzyme-adapter-react-16": "^1.15.7",
     "jest-environment-jsdom": "^29.7.0",
     "jsdom": "^22.1.0",
-    "react": "16.5.2",
-    "react-dom": "16.5.2",
+    "react": "16.8",
+    "react-dom": "16.8",
     "yarn": "^1.22.21"
   },
   "jest": {
