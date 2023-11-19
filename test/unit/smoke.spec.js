@@ -1,5 +1,5 @@
 describe("Smoke Test", () => {
-  it("can handle the truth", () => {
+  it("makes sure true is true", () => {
     expect(true).toBe(true);
   });
 });
