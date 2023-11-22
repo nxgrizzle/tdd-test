@@ -38,6 +38,7 @@
     "jsdom": "^22.1.0",
     "react": "16.8",
     "react-dom": "16.8",
+    "react-test-renderer": "^18.2.0",
     "yarn": "^1.22.21"
   },
   "jest": {
