@@ -2,9 +2,18 @@ version: 2.1
 
 orbs:
   cypress: cypress-io/cypress@3
-  jest: circleci/jest@2 # You may need to adjust the version based on the available versions
+  jest: circleci/jest@2
 
 jobs:
+  cypress-tests:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - cypress/run:
+          package-manager: "yarn"
+          start-command: "yarn start"
+
   jest-tests:
     docker:
       - image: cimg/base:stable
@@ -21,7 +30,5 @@ workflows:
   version: 2
   test:
     jobs:
-      - cypress/run:
-          package-manager: "yarn"
-          start-command: "yarn start"
-      - jest-tests: # Include the Jest tests job in your workflow
+      - cypress-tests
+      - jest-tests
