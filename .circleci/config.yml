@@ -25,6 +25,7 @@ jobs:
   jest-tests:
     docker:
       - image: cimg/base:stable
+      - yarn
     steps:
       - checkout
       - run:
