@@ -1,4 +1,4 @@
-version: 2.1
+version: 2.12
 orbs:
   cypress: cypress-io/cypress@3
 workflows:
