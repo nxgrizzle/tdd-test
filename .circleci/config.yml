@@ -37,7 +37,7 @@ jobs:
           command: yarn install
       - run:
           name: Run Jest tests
-          command: yarn test
+          command: yarn unit
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
