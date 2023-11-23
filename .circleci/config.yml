@@ -24,7 +24,7 @@ jobs:
 
   jest-tests:
     docker:
-      - image: cimg/base:stable
+      - image: node:14 # Use an image with Node.js 14
     steps:
       - checkout
       - run:
