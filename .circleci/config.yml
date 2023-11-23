@@ -24,9 +24,14 @@ jobs:
 
   jest-tests:
     docker:
-      - image: cimg/base:stable
+      - image: cimg/base:20.10.0
     steps:
       - checkout
+      - run:
+          name: Install Yarn
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash
+            export PATH="$HOME/.yarn/bin:$PATH"
       - run:
           name: Install dependencies
           command: yarn install
