@@ -18,4 +18,7 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install # will run `yarn install` command
-      - run: unit
+      - name: Test the app
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: unit # will run `yarn test` command
